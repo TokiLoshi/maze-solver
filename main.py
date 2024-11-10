@@ -1,4 +1,5 @@
-from graphics import Window, Line, Point, Cell
+from graphics import Window
+from cell import Line, Point, Cell
 
 def main(): 
   print("Let's build a maze solver with Tkinter")
