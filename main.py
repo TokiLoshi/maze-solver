@@ -1,5 +1,4 @@
 from graphics import Window
-from cell import Line, Point, Cell
 from maze import Maze
 
 def main(): 
@@ -16,8 +15,6 @@ def main():
 
   window.wait_for_close()
   
-
-
 
 
 main()
