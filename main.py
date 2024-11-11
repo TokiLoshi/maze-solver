@@ -1,19 +1,21 @@
 from graphics import Window
 from cell import Line, Point, Cell
+from maze import Maze
 
 def main(): 
   print("Let's build a maze solver with Tkinter")
-  window = Window(800, 600)
-  line = Line(Point(50, 50), Point(100, 100))
-  window.draw_line(line, "green") 
-  first_cell = Cell(True, True, True, True, 40, 100, 80, 200, window)
-  second_cell = Cell(True, True, True, True, 100, 200, 400, 500, window)
-  canvas = window.get_canvas()
-  first_cell.draw(canvas)
-  second_cell.draw(canvas)
-  move = first_cell.draw_move(second_cell, canvas, undo=False)
-  window.wait_for_close()
+  num_rows = 12 
+  num_cols = 16 
+  margin = 50 
+  screen_x = 800
+  screen_y = 600 
+  cell_size_x = (screen_x - 2 * margin) / num_cols
+  cell_size_y = (screen_y - 2 * margin) / num_rows
+  window = Window(screen_x, screen_y)
+  maze = Maze(margin, margin, num_rows, num_cols, cell_size_x, cell_size_y, window)
 
+  window.wait_for_close()
+  
 
 
 
