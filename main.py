@@ -4,8 +4,8 @@ import sys
 
 def main(): 
   print("Let's build a maze solver with Tkinter")
-  num_rows = 6 
-  num_cols = 8 
+  num_rows = 12 
+  num_cols = 16 
   margin = 50 
   screen_x = 800
   screen_y = 600 
