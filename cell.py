@@ -69,8 +69,6 @@ class Cell:
     half_length2 = abs(to_cell._x2 - to_cell._x1) // 2
     x_center2 = half_length2 + to_cell._x1 
     y_center2 = half_length2 + to_cell._y1 
-
-    print(f"Drawing: point({x_center}, {y_center}) to Point({x_center2}, {y_center2})")
     
     fill_color = "white"
     if undo: 
